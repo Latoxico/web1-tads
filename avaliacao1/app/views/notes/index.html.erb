@@ -1,7 +1,9 @@
+<h1>Notes</h1>
 <table border="1">
     <thead>
         <tr>
-            <td>titulo</td>
+            <td><b>Titulo</b></td> 
+            <td><b>Ação</b></td>
         </tr>
     </thead>
     <tbody>
@@ -10,9 +12,12 @@
                 <td>
                     <%=note.title%>
                 </td>
+                <td>
+                    <a href="notes/<%=note.id%>">Visualizar</a>
+                </td>
             </tr>
         <%end%>
             
     </tbody>
-    
+    <a href="notes/new">Criar</a>
 </table>

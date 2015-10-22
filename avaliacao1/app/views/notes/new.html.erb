@@ -1,0 +1,8 @@
+<h1>Notes</h1>
+<h2>Cadastro de note</h2> <br>
+
+<%=form_for @note do |f|%>
+    <p><b>Titulo</b></p> <%=f.text_field :title%>
+    <p><b>Observacao</b></p> <%=f.text_area :obs%>
+    <%=f.submit 'Salvar'%>
+<%end%>
